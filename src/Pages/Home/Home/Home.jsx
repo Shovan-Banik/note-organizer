@@ -3,9 +3,13 @@ import animation from '../../../assets/animations/animation_ll0vsfet (1).json';
 import image1 from '../../../assets/img/happy.png'
 import image2 from '../../../assets/img/tensed2.png'
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Note Organizer | Home</title>
+            </Helmet>
             <div className="md:w-1/3 mx-auto">
                 <h2 className="text-5xl font-bold text-white py-12">Note Organizer</h2>
                 <Lottie animationData={animation} loop={true} />;
@@ -24,7 +28,7 @@ const Home = () => {
             </div>
             <div className="md:flex py-5">
                 <div className="md:w-1/2 mx-auto">
-                    
+
                     <img className="h-[500px]" src={image2} alt="" />
                 </div>
                 <div className="md:w-1/2 mx-auto flex justify-center items-center">
