@@ -17,7 +17,7 @@ const SignUp = () => {
         const email=data.email;
         const name=data.name;
         const user={name,email};
-        const res = await fetch('http://localhost:5000/users', {
+        const res = await fetch('https://note-organizer-server.vercel.app/users', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

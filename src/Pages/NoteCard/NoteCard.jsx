@@ -25,7 +25,7 @@ const NoteCard = ({ note }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/notes/${_id}`,{
+                fetch(`https://note-organizer-server.vercel.app/notes/${_id}`,{
                     method: 'DELETE'
                 })
                     .then(res => res.json())

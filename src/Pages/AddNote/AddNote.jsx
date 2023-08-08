@@ -13,7 +13,7 @@ const AddNote = () => {
 
 
     const inputNote = async (newNote) => {
-        const res = await fetch('http://localhost:5000/notes', {
+        const res = await fetch('https://note-organizer-server.vercel.app/notes', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

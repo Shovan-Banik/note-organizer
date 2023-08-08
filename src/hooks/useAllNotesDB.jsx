@@ -10,7 +10,7 @@ const useAllNotesDB = () => {
         queryKey: ['notes', user?.email],
         enabled: !loading,
         queryFn: async()=>{
-            const res = await fetch(`http://localhost:5000/notes?email=${user?.email}`,{
+            const res = await fetch(`https://note-organizer-server.vercel.app/notes?email=${user?.email}`,{
                 headers: {
                     authorization: `bearer ${token}`
                 }

@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: 'updateNote/:id',
                 element: <PrivateRoute><UpdateNote></UpdateNote></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:5000/notes/${params.id}`)
+                loader: ({params})=>fetch(`https://note-organizer-server.vercel.app/notes/${params.id}`)
 
             }
         ]
